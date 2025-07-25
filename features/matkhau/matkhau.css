@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.box {
+    border: 2px solid black;
+    padding: 40px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+.khung {
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
