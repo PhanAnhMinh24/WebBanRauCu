@@ -1,18 +1,18 @@
-.body{
-    background-color: aquamarine;
+body{
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    margin: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
   .form-container {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 350px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 40px 10px rgba(11, 11, 11, 0.1);
+      text-align: center;
+      width: 300px;
     }
  .form-container h2 {
       text-align: center;
@@ -32,7 +32,7 @@
     input[type="text"],
     input[type="email"],
     input[type="password"] {
-      width: 100%;
+      width: 90%;
       padding: 10px;
       border: 1px solid #ccc;
       border-radius: 6px;
