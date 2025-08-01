@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rau củ quả 24h - Tươi, Sạch, An Toàn</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* Custom styles for the sidebar menu */
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .header-search input[type="search"] {
+    transition: border-color 0.3s ease;
+  }
+  .header-search input[type="search"]:focus {
+    outline: none;
+    border-color: #f97316; /* Orange */
+    box-shadow: 0 0 5px #f97316;
+  }
+  /* Dropdown Menu */
+  .dropdown-menu {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  /* Custom scrollbar for sidebar */
+  .dropdown-menu::-webkit-scrollbar {
+    width: 6px;
+  }
+  .dropdown-menu::-webkit-scrollbar-thumb {
+    background-color: #4b5563; /* Gray-700 */
+    border-radius: 10px;
+  }
+  /* Arrows for carousel */
+  .carousel-arrow {
+    background-color: rgba(255 255 255 / 0.8);
+    border-radius: 9999px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #064e3b; /* green-900 */
+    font-weight: bold;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    transition: background-color 0.3s ease;
+  }
+  .carousel-arrow:hover {
+    background-color: #d1fae5;
+  }
+  .carousel-arrow-left {
+    left: 8px;
+  }
+  .carousel-arrow-right {
+    right: 8px;
+  }
+</style>
+</head>
+<body class="bg-gray-50">
+
+<header>
+  <nav class="bg-green-900 text-white px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between h-16">
+      <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2 cursor-pointer select-none">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" >
+            <path d="M12 2C9 5 5 7 3 11c0 4 3 7 9 7s9-3 9-7c-2-4-6-6-9-9z"></path>
+            <path d="M12 11v7"></path>
+            <path d="M9 18h6"></path>
+          </svg>
+          <div class="text-sm font-semibold leading-none">
+            <div>RAU CỦ QUẢ 24H</div>
+            <div class="text-xs font-light uppercase tracking-wide">Tươi - Sạch - An Toàn</div>
+          </div>
+        </div>
+
+        <form class="header-search flex flex-1 max-w-lg relative" role="search" aria-label="Search products">
+          <input
+            type="search"
+            placeholder="Tìm kiếm sản phẩm..."
+            aria-label="Tìm kiếm sản phẩm"
+            class="w-full px-4 py-2 rounded-l-md border border-orange-500 text-gray-900 focus:border-orange-600 focus:ring-1 focus:ring-orange-600"
+          />
+          <button
+            type="submit"
+            aria-label="Tìm kiếm"
+            class="bg-orange-500 hover:bg-orange-600 px-4 rounded-r-md focus:outline-none focus:ring-2 focus:ring-orange-600 flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1011.25 18a7.5 7.5 0 005.4-1.35z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="flex items-center space-x-8 pr-2">
+        <a href="tel:0911018650" class="flex items-center space-x-2 hover:text-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-400" aria-label="Hỗ trợ khách hàng 0911018650">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5v4a2 2 0 0 0 2 2h3l4 4v3a2 2 0 0 0 2 2h3v-3l4-4h3a2 2 0 0 0 2-2V5m-9 14v-4m-4-4h4m-4 0v4m0-4H5" />
+          </svg>
+          <div class="text-xs leading-tight">
+            <div>Hỗ trợ khách hàng</div>
+            <div class="font-semibold text-white">0911018650</div>
+          </div>
+        </a>
+        <a href="#" class="flex items-center space-x-2 hover:text-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-400" aria-label="Tài khoản Đăng nhập">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A9 9 0 1 1 18.875 5.124M15 11a3 3 0 1 1-6 0v0a3 3 0 0 1 6 0z" />
+          </svg>
+          <div class="text-xs leading-tight">
+            <div>Tài khoản</div>
+            <div class="font-semibold text-white">Đăng nhập</div>
+          </div>
+        </a>
+        <button
+          aria-label="Giỏ hàng"
+          class="flex items-center space-x-2 bg-transparent border border-white rounded-md px-3 py-1 text-white hover:bg-orange-500 hover:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 0 0 0 1.414L7 19m10-6v6a2 2 0 1 1-4 0v-6m4 0H7" />
+          </svg>
+          <span>Giỏ hàng</span>
+          <span
+            class="ml-1 text-xs font-semibold bg-orange-500 rounded-full px-2 py-0.5 text-white"
+            id="cartCount"
+            aria-live="polite"
+            aria-atomic="true"
+            >0</span
+          >
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <nav aria-label="Danh sách sản phẩm menu" class="bg-white border-b border-gray-300">
+    <div class="max-w-7xl mx-auto flex items-center space-x-2 px-4 sm:px-6 lg:px-8 h-10 text-gray-800">
+      <button id="menuToggle" aria-expanded="false" aria-controls="dropdown-list" aria-label="Danh sách sản phẩm" class="inline-flex items-center space-x-1 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <span>Danh sách sản phẩm</span>
+      </button>
+
+      <ul class="flex space-x-4 text-sm overflow-x-auto no-scrollbar">
+        <li class="inline-flex items-center space-x-1 hover:text-orange-500 cursor-pointer select-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h18l-1 7H4l-1-7z" />
+          </svg>
+          <span>Đặt hàng nhanh</span>
+        </li>
+        <li class="inline-flex items-center space-x-1 hover:text-orange-500 cursor-pointer select-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9V5m0 0a7 7 0 1 1-7 7 7 7 0 0 1 7-7z" />
+          </svg>
+          <span>Giá tốt mỗi ngày</span>
+        </li>
+        <li class="inline-flex items-center space-x-1 hover:text-orange-500 cursor-pointer select-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5 0a9 9 0 1 1-6-8.485" />
+          </svg>
+          <span>G27 Green Farm</span>
+        </li>
+        <li class="inline-flex items-center space-x-1 hover:text-orange-500 cursor-pointer select-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          <span>Review rau củ quả nhà g27 Green Farm</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Dropdown sidebar menu -->
+    <div id="dropdown-list" class="absolute z-30 hidden bg-white border-r border-gray-300 h-[calc(100vh-86px)] top-[86px] left-0 w-60 overflow-y-auto shadow-lg rounded-r-lg dropdown-menu" role="menu" aria-label="Danh sách các loại rau củ quả">
+      <ul class="divide-y divide-gray-200 p-4">
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Sản phẩm sơ chế</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Rau củ quả ép nước</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Trái cây tươi</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Nấm - Măng</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Rau ăn lá - Salad</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Rau sống - salad</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Rau rừng - Cây thảo dược</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Cà chua, ớt</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Rau ăn bông</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Các loại củ - Khoai</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Rau thơm, củ, quả hạt gia vị</li>
+        <li class="py-2 hover:bg-green-50 rounded-md cursor-pointer" role="menuitem" tabindex="0">Combo rau gia đình, bé ăn dặm</li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="relative max-w-7xl mx-auto mt-6 bg-white rounded-lg overflow-hidden shadow-lg" aria-label="G27 Green Farm Banner">
+    <div class="relative h-[360px] sm:h-[400px]">
+      <img
+        src="https://placehold.co/1200x400/cae3bc-4a7c2b?text=Green+Farm+Illustration+with+people+working+field,+sun,+and+trees"
+        alt="Hình minh họa phong cảnh nông trại xanh G27 Green Farm với người làm việc trên cánh đồng, cây xanh và mặt trời vàng sáng"
+        class="w-full h-full object-cover"
+        onerror="this.style.display='none'"
+      />
+      <p
+        class="absolute inset-y-0 left-8 right-8 flex items-center text-green-800 text-lg sm:text-xl font-medium text-left max-w-3xl"
+        style="line-height: 1.5;"
+      >
+        G27 Green Farm tự tin mang sản phẩm đến cho bạn với tiêu chí từ Nông trại đến bàn ăn. Tất cả đều được đa canh,
+        luân canh, xen canh trồng và thu hoạch theo mùa vụ, phù hợp với đặc điểm từng giống cây.
+      </p>
+
+      <button
+        class="carousel-arrow carousel-arrow-left"
+        aria-label="Slide trước"
+        id="slidePrev"
+        type="button"
+      >
+        &#8249;
+      </button>
+      <button
+        class="carousel-arrow carousel-arrow-right"
+        aria-label="Slide tiếp theo"
+        id="slideNext"
+        type="button"
+      >
+        &#8250;
+      </button>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Toggle sidebar dropdown list
+  const menuToggle = document.getElementById('menuToggle');
+  const dropdownList = document.getElementById('dropdown-list');
+  menuToggle.addEventListener('click', () => {
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+    menuToggle.setAttribute('aria-expanded', !expanded);
+    if (!expanded) {
+      dropdownList.classList.remove('hidden');
+    } else {
+      dropdownList.classList.add('hidden');
+    }
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!menuToggle.contains(e.target) && !dropdownList.contains(e.target)) {
+      dropdownList.classList.add('hidden');
+      menuToggle.setAttribute('aria-expanded', false);
+    }
+  });
+
+  // Banner carousel simulation (2 slides)
+  const slides = [
+    {
+      text: "G27 Green Farm tự tin mang sản phẩm đến cho bạn với tiêu chí từ Nông trại đến bàn ăn. Tất cả đều được đa canh, luân canh, xen canh trồng và thu hoạch theo mùa vụ, phù hợp với đặc điểm từng giống cây.",
+      imgSrc: "https://placehold.co/1200x400/cae3bc-4a7c2b?text=Green+Farm+Illustration+with+people+working+field,+sun,+and+trees",
+      imgAlt: "Hình minh họa phong cảnh nông trại xanh G27 Green Farm với người làm việc trên cánh đồng, cây xanh và mặt trời vàng sáng"
+    },
+    {
+      text: "Sản phẩm tươi ngon được lựa chọn kỹ càng mỗi ngày đến từ G27 Green Farm, đảm bảo an toàn và chất lượng cho bữa ăn của bạn và gia đình.",
+      imgSrc: "https://placehold.co/1200x400/a5d8a4-256c1a?text=Fresh+farm+products+handpicked+daily,+healthy+vegetables",
+      imgAlt: "Minh họa rau củ quả tươi ngon được lựa chọn kỹ càng với nền màu xanh tươi sáng"
+    }
+  ];
+
+  let currentSlide = 0;
+  const img = document.querySelector('main img');
+  const paragraph = document.querySelector('main p');
+
+  function showSlide(index) {
+    const slide = slides[index];
+    img.src = slide.imgSrc;
+    img.alt = slide.imgAlt;
+    paragraph.textContent = slide.text;
+  }
+
+  document.getElementById('slidePrev').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  document.getElementById('slideNext').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  });
+
+  // Initial slide display
+  showSlide(currentSlide);
+</script>
+</body>
+</html>
+
