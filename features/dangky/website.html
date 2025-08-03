@@ -1,80 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web rau củ</title>
-    <link rel="stylesheet" href="website.css">
+  <meta charset="UTF-8">
+  <title>G27 Green Farm</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-  <ul class="top-bar">
-    <img src="https://i.pinimg.com/736x/10/ca/72/10ca72ff97e278fc9cacfa46b9ffb064.jpg" alt="logo" class="logo">
-   <form class="search-form" role="search" aria-label="Tìm kiếm sản phẩm">
-  <input
-    type="search"
-    placeholder="Tìm kiếm sản phẩm..."
-    aria-label="Tìm kiếm sản phẩm"
-    class="search-input"/>
-  <button type="submit" aria-label="Tìm kiếm" class="search-button">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="search-icon"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-      stroke-width="2"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1011.25 18a7.5 7.5 0 005.4-1.35z"
-      />
-    </svg>
-  </button>
-</form>
-        
-    <li><a href="">Hotline: 8386</a></li> 
-    <li><a href="">Tài khoản</a></li>
-    <button class="cart-button" aria-label="Giỏ hàng">
-  <svg xmlns="http://www.w3.org/2000/svg" class="cart-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.293 2.293a1 1 0 0 0 0 1.414L7 19m10-6v6a2 2 0 1 1-4 0v-6m4 0H7" />
-  </svg>
-  <span>Giỏ hàng</span>
-  <span class="cart-count" id="cartCount" aria-live="polite" aria-atomic="true">0</span>
-</button>
+  <div class="container">
 
-  </ul>
-   <nav>
-    <ul class="nav-bar">
-    <li><a href="">Danh Sách sản phẩm</a>
-                <ul class="sub-menu">
-                <li><a href="">Sản phẩm sơ chế</a></li> 
-                <li><a href="">Rau củ quả nước ép</a></li>
-                <li><a href="">Trái cây tươi</a></li>
-                <li><a href="">Nấm - Măng</a></li>
-                <li><a href="">Rau ăn lá - Salad</a></li>
-                <li><a href="">Rau sống - salad</a></li>
-                <li><a href="">Rau rừng - Cây thảo dược</a></li>
-                <li><a href="">Rau ăn bông</a></li>
-                <li><a href="">Các loại củ - Khoai</a></li>
-                <li><a href="">Rau thơm, củ, quả hạt gia vị</a></li>
-                <li><a href="">Combo rau gia đình, bé ăn dặm</a></li>
-             </ul>
-            </li>
-    <li><a href="#">Đặt hàng nhanh</a></li>
-    <li><a href="#">Giá tốt mỗi ngày</a></li>
-    <li><a href="#">G27 Green Farm</a></li>
-    <li><a href="#">Review rau củ quả</a></li>
-        </ul>
-   </nav> 
-    </header>
-    <div id="content">
-        <h1>Bán rau củ</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, omnis error voluptatibus inventore voluptas quis? Ipsam minus ratione labore! Repellendus dolorum omnis quasi voluptates cumque aut enim distinctio sequi ut.</p>
-        <p>Ipsa possimus, temporibus eaque sequi inventore nisi libero pariatur ipsum quasi ad quo reiciendis error impedit repellat! Ad minus soluta at saepe dicta amet inventore molestias, a autem architecto necessitatibus.</p>
-        <p>Autem, vel facere? Distinctio, laboriosam tempora aliquid atque nam nemo quam suscipit. Modi ratione nostrum provident omnis fugiat laboriosam. Sunt labore dolorem perspiciatis praesentium quasi quam amet, delectus veritatis sed.</p>
-        <p>Ullam totam ratione quibusdam cumque repudiandae! Dicta, nesciunt deleniti vel eos sequi accusamus necessitatibus impedit itaque placeat illo voluptatem ratione officia ex autem distinctio temporibus maxime recusandae vitae voluptas? Obcaecati.</p>
-    </div>
+    <!-- MENU BÊN TRÁI -->
+    <aside class="sidebar">
+      <h3>Danh sách sản phẩm</h3>
+      <ul>
+        <li>Sản phẩm sơ chế</li>
+        <li>Rau củ quả ép nước</li>
+        <li>Trái cây tươi</li>
+        <li>Nấm - Măng</li>
+        <li>Rau ăn lá - Salad</li>
+        <li>Rau sống - salad</li>
+        <li>Rau rừng - Cây thảo dược</li>
+        <li>Cà chua, ớt</li>
+        <li>Rau ăn bông</li>
+        <li>Các loại củ - Khoai</li>
+        <li>Rau thơm, củ, quả hạt gia vị</li>
+        <li>Combo rau gia đình, bé ăn dặm</li>
+      </ul>
+    </aside>
+
+    <!-- PHẦN NỘI DUNG CHÍNH -->
+    <main class="main-content">
+
+      <!-- BANNER -->
+      <div class="banner">
+        <img src="https://via.placeholder.com/800x300?text=G27+Green+Farm+Banner" alt="G27 Banner">
+        <div class="banner-text">
+          <h2>G27 GREEN FARM</h2>
+          <p>Tại G27 Green Farm, chúng tôi tin vào sức mạnh của tự nhiên.</p>
+        </div>
+      </div>
+
+      <!-- DANH SÁCH COMBO -->
+      <section class="combo-section">
+        <h2>Combo dinh dưỡng</h2>
+        <div class="combo-grid">
+
+          <!-- Combo 1 -->
+          <div class="combo-card">
+            <img src="https://via.placeholder.com/260x180?text=Combo+Family+89k_001" alt="">
+            <div class="status">Giao trong ngày</div>
+            <div class="title">Combo family 89k_001</div>
+            <div class="desc">Rau Là Phải Tươi. Nhận Đặt Rau Theo Nhu Cầu Của Bạn.</div>
+            <div class="price">89.000đ</div>
+          </div>
+
+          <!-- Combo 2 -->
+          <div class="combo-card">
+            <img src="https://via.placeholder.com/260x180?text=Combo+Family+89k_002" alt="">
+            <div class="status">Giao trong ngày</div>
+            <div class="title">Combo family 89k_002</div>
+            <div class="desc">Rau Là Phải Tươi. Nhận Đặt Rau Theo Nhu Cầu Của Bạn.</div>
+            <div class="price">89.000đ</div>
+          </div>
+
+          <!-- Combo 3 -->
+          <div class="combo-card">
+            <img src="https://via.placeholder.com/260x180?text=Combo+Baby+59k_001" alt="">
+            <div class="status">Giao trong ngày</div>
+            <div class="title">Combo baby 59k_001</div>
+            <div class="desc">Rau Là Phải Tươi. Nhận Đặt Rau Theo Nhu Cầu Của Bạn.</div>
+            <div class="price">59.000đ</div>
+          </div>
+
+          <!-- Combo 4 -->
+          <div class="combo-card">
+            <img src="https://via.placeholder.com/260x180?text=Combo+Baby+59k_002" alt="">
+            <div class="status">Giao trong ngày</div>
+            <div class="title">Combo baby 59k_002</div>
+            <div class="desc">Rau Là Phải Tươi. Nhận Đặt Rau Theo Nhu Cầu Của Bạn.</div>
+            <div class="price">59.000đ</div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- THANH CÔNG CỤ BÊN PHẢI -->
+    <aside class="tools">
+      <div class="tool-icon">🏠</div>
+      <div class="tool-icon">🔍</div>
+      <div class="tool-icon">💬</div>
+      <div class="tool-icon">📞</div>
+    </aside>
+
+  </div>
 </body>
 </html>

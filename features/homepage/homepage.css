@@ -1,0 +1,156 @@
+            body{
+                background-color: rgb(238, 238, 238);
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container{
+                background-color: white;
+            }
+            .container-menu{
+                max-width: 1000px;
+                margin: 0px auto;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+            }
+            .container-menu-list{
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .container-menu-item{
+                color: black;
+                display: block;
+                padding: 16px 18px;
+                text-decoration: none;
+                font-size: 14px;
+            }
+            .container-between{
+                max-width: 1000px;
+                margin: 0px auto;
+            }
+            .between-item between-item--active{
+                color: black;
+                display: block;
+                padding: 16px 18px;
+                text-decoration: none;
+                font-size: 14px;
+                right: 100px;
+            }
+            .between-item{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .between-link{
+                color: black;
+                display: block;
+                padding: 8px 7px;
+                text-decoration: none;
+                font-size: 14px;
+            }
+            .between-menu {
+            max-height: 400px;   /* điều chỉnh độ cao tối đa tùy bạn muốn bao nhiêu */
+            overflow-y: auto;    /* cho phép cuộn dọc khi vượt chiều cao */
+            padding-left: 15px; /* để tránh chữ bị che bởi thanh cuộn */
+            }
+            .slider-container {
+                flex-grow: 1;
+                max-width: 600px;
+                height: 400px;
+                border: 1px solid #ccc;
+                overflow: hidden;
+                position: relative;
+                padding-left: 0px;
+                right: -300px;
+                top: -420px;
+                }
+
+                .slider-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                }
+                 h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .combo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top:-300px;
+    }
+    .combo-container h1{
+        margin-top: -60px;
+        margin-right: -310px;
+        font-size: 30px;
+    }
+    .combo-item {
+      width: 220px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .combo-item img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .combo-body {
+      padding: 10px;
+      flex-grow: 1;
+    }
+
+    .tag {
+      font-size: 12px;
+      color: green;
+      margin-bottom: 4px;
+    }
+
+    .combo-name {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .combo-desc {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: orange;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .order-button {
+      background-color: #008000;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      border-top: 1px solid #ccc;
+      transition: background-color 0.3s;
+    }
+
+    .order-button:hover {
+      background-color: #006600;
+    }
+    .combo-container h1{
+        top: 0px;
+        right: 0px;
+    }

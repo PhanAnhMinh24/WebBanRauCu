@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $address = trim($_POST['address']);
 
     // Mã hóa mật khẩu
-    // $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     // Kiểm tra email đã tồn tại chưa
     $check_query = "SELECT * FROM users WHERE email = ?";
@@ -25,7 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Thêm người dùng
         $insert_query = "INSERT INTO users(full_name, email, password, phone, address) VALUES (?,?,?,?,?)";
         $stmt = $conn->prepare($insert_query);
-        $stmt->bind_param("sssss", $full_name, $email, $password, $phone, $address);
+        $stmt->bind_param("sssss", $full_name, $email,  $hashed_password, $phone, $address);
+
 
         if ($stmt->execute()) {
             echo "<script>alert('Đăng ký thành công.'); window.location.href='../login/login.php';</script>";
