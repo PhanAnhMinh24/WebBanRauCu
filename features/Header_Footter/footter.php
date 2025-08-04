@@ -10,21 +10,6 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <img src="../Header_Footter/img/logo.png" class="logo">
-            <div class="search-box">
-                <input type="search" placeholder="Tìm kiếm sản phẩm...">
-                <button><i class="fas fa-search"></i></button>
-            </div>
-            <i class="fas fa-phone" style="font-size: 24px;"></i>
-            <div class="support">               
-                <p>Hỗ trợ khách hàng</p>
-                <p>0855805761</p>               
-            </div>
-            <i class="fa-regular fa-circle-user" style="font-size: 30px;"></i>
-            <a href="../login/login.php">Đăng nhập</a>
-            <button><i class="fas fa-cart-plus" style="font-size: 24px;"></i> Giỏ hàng</button>
-        </header>
         <footer>
             <div class="footer-section about-us">
                 <h3>Về chúng tôi</h3>
