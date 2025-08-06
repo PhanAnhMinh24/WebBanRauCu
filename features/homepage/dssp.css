@@ -1,0 +1,174 @@
+body{
+        background-color: rgb(226, 226, 226);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+.container{
+        background-color: rgb(255, 255, 255);
+        width: 1230px;
+        margin: 0 auto;
+
+    }
+    /* Trưng bày */
+.between-list{
+        display: grid;
+        grid-template-columns: repeat(5,250px);   
+    }
+.combo-item {
+      width: 220px;
+      border: 7px solid #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+.combo-item img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+.combo-body {
+      padding: 10px;
+      flex-grow: 1;
+    }
+
+.tag {
+      font-size: 12px;
+      color: green;
+      margin-bottom: 4px;
+    }
+
+.combo-name {
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+.combo-desc {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+.price {
+      color: orange;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+.order-button {
+      background-color: #008000;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      border-top: 1px solid #ccc;
+      transition: background-color 0.3s;
+    }
+
+.order-button:hover {
+      background-color: #006600;
+    }
+    /* header */
+  .container-menu{
+        margin-left: -10px;
+    }
+  .container-menu-list{
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 12px 14px;
+      text-align: right;
+}
+.container-menu-item{
+  color: black;
+  display: block;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 100%;
+}
+/* Sắp xếp */
+ .sorting {
+      margin-bottom: 24px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .sorting span.label {
+      font-weight: 600;
+      color: #696969;
+      user-select: none;
+    }
+    .sorting a {
+      padding: 4px 8px;
+      border-radius: 4px;
+      color: #666;
+      border-bottom: 2px solid transparent;
+      font-weight: 500;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+    .sorting a.active {
+      color: #2a7f31;
+      border-color: #2a7f31;
+    }
+    .sorting a:hover:not(.active) {
+      color: #1b4e10;
+      border-color: #1b4e10;
+    }
+    .between h1{
+      font-weight: initial;
+      right: 10px;
+    }
+    .container-menu-item:hover {
+      color: #006600;
+      border-color: #1b4e10;
+    }
+
+
+
+
+
+
+.container-menu-list li a{
+  color: black;
+  display: block;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+/* Đặt menu con ẩn đi ban đầu */
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 999;
+    font-size: 20px;
+    list-style: none;
+    width: 100%;
+    height: 300px;
+    /* Thanh cuộn */
+    overflow-y: scroll; 
+    
+}
+
+.container-menu-list li:hover > .sub-menu {
+    display: block;
+}
+
+.container-menu-list li {
+    position: relative;
+    text-align: left;
+}
+.ex:hover{
+  background-color: #e4e4e4;
+  color: #006600;
+  border-color: #1b4e10;
+}
