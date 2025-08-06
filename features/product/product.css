@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    max-width: 1400px;   /* Giới hạn chiều rộng */
+    margin: 0 auto;      /* Canh giữa */
+    padding: 0 200px;     /* Khoảng trắng hai bên */
+}
+
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.anh {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #222;
+}
+
+.card p {
+    margin: 4px 0;
+    color: #555;
+}
+
+.card p:last-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f39200;
+}
+
+button {
+    margin-top: auto;
+    padding: 10px 18px;
+    background-color: #0b6b2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #095325;
+}
+
+.header-sort {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;   /* Giới hạn chiều rộng */
+    margin: 0 auto;      /* Canh giữa */
+    padding: 10px 200px;
+}
+
+.header-sort h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0 0 8px 0;
+}
+
+.sort-options {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sort-options span {
+    color: #555;
+}
+
+.sort-options a {
+    text-decoration: none;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.sort-options a:hover {
+    color: #0b6b2f;
+}
+
