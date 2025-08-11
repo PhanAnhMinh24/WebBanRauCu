@@ -1,17 +1,8 @@
 <?php
-// define("Hoanggg",["Thien", "ly", "oi"]);
-// echo Hoanggg[1];
-$x=15;
-$y=7;
-echo $x + $y;
-echo ("<br>");
-echo $x - $y;
-echo ("<br>");
-echo $x * $y;
-echo ("<br>");
-echo $x / $y;
-echo ("<br>");
-echo $x % $y;
-echo ("<br>");
-echo $x ** $y;
+$x=5;
+$y=2;
+if ($x>$y)
+    echo "Đúng";
+else
+    echo "sai";
 ?>
