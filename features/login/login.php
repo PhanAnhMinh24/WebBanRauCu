@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $_SESSION['user_id'] = $user['user_id'];
                 $_SESSION['full_name'] = $user['full_name'];
                 $_SESSION['role'] = $user['role'];
-                header("Location: ../../../homepage/homepage.php");
+                header("Location: ../homepage/homepage.php"); // Chuyển hướng đến trang chính sau khi đăng nhập
                 exit();
             } else {
                 $error_message = "Mật khẩu không đúng.";

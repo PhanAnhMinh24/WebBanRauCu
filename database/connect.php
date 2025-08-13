@@ -10,6 +10,5 @@ if  ($conn->connect_error) {
 }   
 else {
     mysqli_query($conn,"SET NAMES 'utf8'");
-    echo 'Nhúng OK rồi =))) ';
 }
 ?>
