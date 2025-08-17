@@ -3,7 +3,6 @@ session_start();
 include("../database/connect.php");
 
 $error_message = "";
-
 // Chỉ xử lý khi người dùng bấm nút Đăng nhập
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST['email'] ?? '');
@@ -26,7 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $_SESSION['user_id'] = $user['user_id'];
                 $_SESSION['full_name'] = $user['full_name'];
                 $_SESSION['role'] = $user['role'];
-                header("Location: ../../../homepage/homepage.php");
+                if($user['role'] == 'admin'){
+        header("Location:../homepage/homepage_admin.php");
+    }
+    else{
+        header("Location:../homepage/homepage.php");
+    }
                 exit();
             } else {
                 $error_message = "Mật khẩu không đúng.";
@@ -36,6 +40,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         }
     }
 }
+    
+
+
 ?>
 <!DOCTYPE html>
 <html lang="vi">
